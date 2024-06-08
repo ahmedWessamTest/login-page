@@ -90,7 +90,7 @@ function loginToHome() {
     loginValidation(loginPassword, logPassMsg) &&
     confirmEmail()
   ) {
-    loginBtn.setAttribute("href", "../pages/home.html");
+    loginBtn.setAttribute("href", "pages/home.html");
   }
 }
 function clearLogin() {
