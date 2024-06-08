@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>register</title>
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!-- main css file link -->
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+  <body>
+    <main>
+      <div class="view">
+        <div class="container">
+          <div class="main-card rounded-4 p-5 col col-lg-8 text-center">
+            <h1 class="text-capitalize mb-3">smart login system</h1>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="regName"
+                placeholder="Enter your name"
+                oninput="registerValidation(this, regNameMeg)"
+              />
+              <div id="regNameMeg" class="invalid-feedback ms-3 text-start">
+                must only characters
+              </div>
+            </div>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="regEmail"
+                placeholder="Enter your email"
+                oninput="registerValidation(this, regEmailMsg); reEmailValidation()"
+              />
+              <div id="regEmailMsg" class="invalid-feedback ms-3 text-start">
+                invalid email
+              </div>
+            </div>
+            <div class="mb-3">
+              <input
+                type="password"
+                class="form-control"
+                id="regPassword"
+                placeholder="Enter your password"
+                oninput="registerValidation(this, regPasswordMsg)"
+              />
+            </div>
+            <div id="regPasswordMsg" class="invalid-feedback ms-3 text-start">
+              must contain at least 8 characters
+              at least one uppercase
+              at least one digit
+              at least one special character(e.g., !@#$%^&*)
+            </div>
+            <a
+              onclick="addNewAccount()"
+              id="signinBtn"
+              class="btn animated-button rounded-5 col-4 mb-3"
+            >
+              Sign Up
+            </a>
+            <p>
+              You have an account?
+              <a href="../index.html" class="regiter-link">Sign in</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- main js file -->
+    <script src="../js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+:root {
+    --main-green: #A3DC2F;
+}
+.bg-green {
+    background-color: var(--main-green);
+}
+.bg-blue {
+    background: #003FDB;
+}
+.bg-gray {
+    background-color: #686D76;
+}
+.main-card {
+    background-color: #F8F8F8;
+}
+.animated-button {
+    background-color: #A3DC2F;
+    transition: background-color 0.5s, transform 0.5s;
+}
+.animated-button:hover {
+    background-color: #8cbf28;
+    transform: scale(1.1);
+}
+.animated-button:active {
+    background-color: #76a123;
+    transform: scale(0.95);
+}
+.outline-animation {
+    border: 1px solid #000;
+    transition: background-color 0.5s, border 0.5s;
+}
+.outline-animation:hover {
+    background-color: var(--main-green);
+}
+/* page */
+.view .container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.view .container .main-card input {
+    border-radius: 100vh;
+}
+.view .container .main-card input:focus {
+    box-shadow: 0px 0px 4px  var(--main-green);
+    border-color: var(--main-green);
+}
+.view .container .main-card input.is-invalid:focus {
+    box-shadow: 0px 0px 4px  red;
+}
+.regiter-link {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s;
+}
+.regiter-link:hover {
+    color: var(--main-green);
+}
